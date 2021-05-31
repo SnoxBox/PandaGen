@@ -64,7 +64,7 @@ else:
     port = 1234
 
 if args.type: 
-    print('\n' "Generated " +  args.type + " shell: UwU")
+    print('\n' "[+] Generated " +  args.type + " shell: UwU")
     for k,v in shell_array.items():
         for i in v:
             if k == args.type:
@@ -72,12 +72,12 @@ if args.type:
                 print(x.format(ip, port))
                 
 if args.list:
-    print('\n'"available shells: oWo")
+    print('\n'"[*] available shells: oWo")
     for k,v in shell_array.items():
         print(k.capitalize())
 
 if args.all:
-    print('\n'"generated all shells: >x")
+    print('\n'"[+] generated all shells: >x")
     for k,v in shell_array.items():
         for i in v:
             x = base64.b64decode(i).decode('utf-8')
@@ -85,6 +85,6 @@ if args.all:
 
 
 
-#- Reverse Shells From - 
+#Shells from:
 #https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Reverse%20Shell%20Cheatsheet.md
 #http://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet
