@@ -64,7 +64,7 @@ else:
     port = 1234
 
 if args.type: 
-    print('\n' "[+] Generated " +  args.type + " shell: UwU")
+    print("[+] Generated " +  args.type + " shell: "'\n')
     for k,v in shell_array.items():
         for i in v:
             if k == args.type:
@@ -72,12 +72,12 @@ if args.type:
                 print(x.format(ip, port))
                 
 if args.list:
-    print('\n'"[*] available shells: oWo")
+    print("[*] available shells: "'\n')
     for k,v in shell_array.items():
         print(k.capitalize())
 
 if args.all:
-    print('\n'"[+] generated all shells: >x")
+    print("[+] generated all shells: "'\n')
     for k,v in shell_array.items():
         for i in v:
             x = base64.b64decode(i).decode('utf-8')
