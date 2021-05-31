@@ -48,7 +48,8 @@ optional arguments:
 ```
 
 ## Release History
-
+* 0.0.2
+    * Made some minor changes to syntax
 * 0.0.1
     * First proper release
 
