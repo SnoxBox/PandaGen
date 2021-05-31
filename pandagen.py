@@ -4,10 +4,6 @@ import argparse
 import base64    
 import sys
 
-#Load main program
-#if __name__ == '__main__':
-
-
 #print usage
 parser = argparse.ArgumentParser()
 parser.add_argument("-ip", "--ip", type=str, help="IP address", dest='ipaddr')
